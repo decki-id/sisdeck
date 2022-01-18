@@ -1,3 +1,3 @@
-@extends('/sisdeck/layouts/app')
+@extends('/layouts/app')
 
 @section('title', 'SisDeck | Dashboard')

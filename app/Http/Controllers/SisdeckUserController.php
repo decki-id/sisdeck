@@ -35,7 +35,7 @@ class SisdeckUserController extends AppBaseController
         $sisdeckUsers = $this->sisdeckUserRepository->all();
         $role = SisdeckRole::pluck('role_name', 'role_id');
 
-        return view('sisdeck/users/index', compact('sisdeckUsers', 'role'));
+        return view('/users/index', compact('sisdeckUsers', 'role'));
     }
 
     /**
@@ -45,7 +45,7 @@ class SisdeckUserController extends AppBaseController
      */
     public function create()
     {
-        return view('sisdeck/users/create');
+        return view('/users/create');
     }
 
     /**
@@ -85,7 +85,7 @@ class SisdeckUserController extends AppBaseController
             return redirect(route('sisdeck.users.index'));
         }
 
-        return view('sisdeck/users/read')->with('sisdeckUser', $sisdeckUser);
+        return view('/users/read')->with('sisdeckUser', $sisdeckUser);
     }
 
     /**
@@ -105,7 +105,7 @@ class SisdeckUserController extends AppBaseController
             return redirect(route('sisdeck.users.index'));
         }
 
-        return view('sisdeck/users/update')->with('sisdeckUser', $sisdeckUser);
+        return view('/users/update')->with('sisdeckUser', $sisdeckUser);
     }
 
     /**

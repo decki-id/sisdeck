@@ -33,12 +33,12 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('/sisdeck') }}">SisDeck<br>Students Information System</a>
+            <a href="{{ url('/') }}">SisDeck<br>Students Information System</a>
         </div>
 
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
-            <form method="post" action="{{ url('/sisdeck-login') }}">
+            <form method="post" action="{{ url('/login') }}">
                 @csrf
                 <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
                     <div class="input-group">
@@ -79,8 +79,8 @@
             </form>
             <hr>
             <div class="text-center">
-                <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
-                <a href="{{ url('/sisdeck/register') }}">Register a new membership</a>
+                <a href="{{ url('/reset-password') }}">I forgot my password</a><br>
+                <a href="{{ url('/register-form') }}">Register a new membership</a>
             </div>
         </div>
         <!-- /.login-box-body -->

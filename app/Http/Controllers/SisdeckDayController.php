@@ -32,8 +32,7 @@ class SisdeckDayController extends AppBaseController
     {
         $sisdeckDays = $this->sisdeckDayRepository->all();
 
-        return view('/sisdeck/days/index')
-            ->with('sisdeckDays', $sisdeckDays);
+        return view('/days/index')->with('sisdeckDays', $sisdeckDays);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckDayController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/days/create');
+        return view('/days/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckDayController extends AppBaseController
             return redirect(route('sisdeck.days.index'));
         }
 
-        return view('/sisdeck/days/show')->with('sisdeckDay', $sisdeckDay);
+        return view('/days/show')->with('sisdeckDay', $sisdeckDay);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckDayController extends AppBaseController
             return redirect(route('sisdeck.days.index'));
         }
 
-        return view('/sisdeck/days/edit')->with('sisdeckDay', $sisdeckDay);
+        return view('/days/edit')->with('sisdeckDay', $sisdeckDay);
     }
 
     /**

@@ -19,10 +19,10 @@ Route::view('/welcome', 'welcome')->name('welcome');
 
 // SisDeck portfolio
 Route::get('/login-form', 'SisdeckLoginController@showLoginForm')->name('sisdeck.login.form');
-Route::post('login', 'SisdeckLoginController@login')->name('sisdeck.login');
+Route::post('/login', 'SisdeckLoginController@login')->name('sisdeck.login');
 Route::get('/register-form', 'SisdeckRegisterController@showRegistrationForm')->name('sisdeck.register.form');
-Route::post('register', 'SisdeckRegisterController@register')->name('sisdeck.register');
-Route::post('logout', 'SisdeckLoginController@logout')->name('sisdeck.logout');
+Route::post('/register', 'SisdeckRegisterController@register')->name('sisdeck.register');
+Route::post('/logout', 'SisdeckLoginController@logout')->name('sisdeck.logout');
 Route::get('/', 'SisdeckController@index')->name('sisdeck.home');
 Route::get('/academics', 'SisdeckAcademicController@index')->name('sisdeck.academics.index');
 Route::post('/academics', 'SisdeckAcademicController@store')->name('sisdeck.academics.store');

@@ -32,7 +32,7 @@ class SisdeckClassAssignmentController extends AppBaseController
     {
         $sisdeckClassAssignments = $this->sisdeckClassAssignmentRepository->all();
 
-        return view('sisdeck/class_assignments/index')->with('sisdeckClassAssignments', $sisdeckClassAssignments);
+        return view('/class_assignments/index')->with('sisdeckClassAssignments', $sisdeckClassAssignments);
     }
 
     /**
@@ -42,7 +42,7 @@ class SisdeckClassAssignmentController extends AppBaseController
      */
     public function create()
     {
-        return view('sisdeck/class_assignments/create');
+        return view('/class_assignments/create');
     }
 
     /**
@@ -80,7 +80,7 @@ class SisdeckClassAssignmentController extends AppBaseController
             return redirect(route('sisdeck.class_assignments.index'));
         }
 
-        return view('sisdeck/class_assignments/show')->with('sisdeckClassAssignment', $sisdeckClassAssignment);
+        return view('/class_assignments/show')->with('sisdeckClassAssignment', $sisdeckClassAssignment);
     }
 
     /**
@@ -100,7 +100,7 @@ class SisdeckClassAssignmentController extends AppBaseController
             return redirect(route('sisdeck.class_assignments.index'));
         }
 
-        return view('sisdeck/class_assignments/edit')->with('sisdeckClassAssignment', $sisdeckClassAssignment);
+        return view('/class_assignments/edit')->with('sisdeckClassAssignment', $sisdeckClassAssignment);
     }
 
     /**

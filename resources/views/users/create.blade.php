@@ -11,39 +11,39 @@
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('username', 'Username', ['class' => 'form-label']) !!}
-                        {!! Form::text('username', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'username-create', 'placeholder' => 'Insert username']) !!}
+                        {!! Form::text('username', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_username-create', 'placeholder' => 'Insert username']) !!}
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('fullname', 'Fullname', ['class' => 'form-label']) !!}
-                        {!! Form::text('fullname', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'fullname-create', 'placeholder' => 'Insert fullname']) !!}
+                        {!! Form::text('fullname', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_fullname-create', 'placeholder' => 'Insert fullname']) !!}
                     </div>
                 </div>
                 @if(!empty($role))
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('role_id', 'Role', ['class' => 'form-label']) !!}
-                        {!! Form::select('role_id', $role, 'null', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'role-create', 'title' => 'User Role', 'placeholder' => 'Choose role']) !!}
+                        {!! Form::select('role_id', $role, 'null', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_role-create', 'title' => 'User Role', 'placeholder' => 'Choose role']) !!}
                     </div>
                 </div>
                 @endif
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('email', 'Email', ['class' => 'form-label']) !!}
-                        {!! Form::email('email', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'email-create', 'placeholder' => 'Insert email address']) !!}
+                        {!! Form::email('email', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_email-create', 'placeholder' => 'Insert email address']) !!}
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('password', 'Password', ['class' => 'form-label']) !!}
-                        {!! Form::password('password', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'password-create', 'placeholder' => 'Insert password']) !!}
+                        {!! Form::password('password', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_password-create', 'placeholder' => 'Insert password']) !!}
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('password_validation', 'Confirm Password', ['class' => 'form-label']) !!}
-                        {!! Form::password('password_validation', ['class' => 'form-control', 'maxlength' => 191, 'title' => 'Confirm Password', 'id' => 'confirm_password-create']) !!}
+                        {!! Form::password('password_validation', ['class' => 'form-control', 'maxlength' => 191, 'title' => 'Confirm Password', 'id' => 'user_confirmpassword-create']) !!}
                     </div>
                 </div>
             </div>
@@ -62,13 +62,13 @@
     <script>
         $('#reset_button-users').on('click', function (event) {
             var modal = $('#create-user_modal');
-            modal.find('.modal-body #username-create').val("");
-            modal.find('.modal-body #fullname-create').val("");
-            modal.find('.modal-body #role-create').val("");
-            modal.find('.modal-body #email-create').val("");
-            modal.find('.modal-body #password-create').val("");
-            modal.find('.modal-body #confirm_password-create').val("");
-            modal.find('.modal-body #username-create').focus();
+            modal.find('.modal-body #user_username-create').val("");
+            modal.find('.modal-body #user_fullname-create').val("");
+            modal.find('.modal-body #user_role-create').val("");
+            modal.find('.modal-body #user_email-create').val("");
+            modal.find('.modal-body #user_password-create').val("");
+            modal.find('.modal-body #user_confirmpassword-create').val("");
+            modal.find('.modal-body #user_username-create').focus();
         });
     </script>
 @endpush

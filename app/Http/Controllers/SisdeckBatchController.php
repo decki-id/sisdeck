@@ -32,8 +32,7 @@ class SisdeckBatchController extends AppBaseController
     {
         $sisdeckBatches = $this->sisdeckBatchRepository->all();
 
-        return view('/sisdeck/batches/index')
-            ->with('sisdeckBatches', $sisdeckBatches);
+        return view('/batches/index')->with('sisdeckBatches', $sisdeckBatches);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckBatchController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/batches/create');
+        return view('/batches/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckBatchController extends AppBaseController
             return redirect(route('sisdeck.batches.index'));
         }
 
-        return view('/sisdeck/batches/show')->with('sisdeckBatch', $sisdeckBatch);
+        return view('/batches/show')->with('sisdeckBatch', $sisdeckBatch);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckBatchController extends AppBaseController
             return redirect(route('sisdeck.batches.index'));
         }
 
-        return view('/sisdeck/batches/edit')->with('sisdeckBatch', $sisdeckBatch);
+        return view('/batches/edit')->with('sisdeckBatch', $sisdeckBatch);
     }
 
     /**

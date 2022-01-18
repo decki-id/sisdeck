@@ -32,7 +32,7 @@ class SisdeckClassController extends AppBaseController
     {
         $sisdeckClasses = $this->sisdeckClassRepository->all();
 
-        return view('/sisdeck/classes/index')->with('sisdeckClasses', $sisdeckClasses);
+        return view('/classes/index')->with('sisdeckClasses', $sisdeckClasses);
     }
 
     /**
@@ -42,7 +42,7 @@ class SisdeckClassController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/classes/create');
+        return view('/classes/create');
     }
 
     /**
@@ -81,7 +81,7 @@ class SisdeckClassController extends AppBaseController
             return redirect(route('sisdeck.classes.index'));
         }
 
-        return view('/sisdeck/classes/show')->with('sisdeckClass', $sisdeckClass);
+        return view('/classes/show')->with('sisdeckClass', $sisdeckClass);
     }
 
     /**
@@ -101,7 +101,7 @@ class SisdeckClassController extends AppBaseController
             return redirect(route('sisdeck.classes.index'));
         }
 
-        return view('/sisdeck/classes/edit')->with('sisdeckClass', $sisdeckClass);
+        return view('/classes/edit')->with('sisdeckClass', $sisdeckClass);
     }
 
     /**

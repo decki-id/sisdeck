@@ -8,6 +8,7 @@ const
     createDayButton = document.querySelector("#create-day_button"),
     createRoleButton = document.querySelector("#create-role_button"),
     createSemesterButton = document.querySelector("#create-semester_button"),
+    createTeacherButton = document.querySelector("#create-teacher_button"),
     createUserButton = document.querySelector("#create-user_button"),
     academicFromCreate = document.querySelector("#ac_from-create"),
     batchYearCreate = document.querySelector("#year-create"),
@@ -22,7 +23,8 @@ const
     roleNameCreate = document.querySelector("#role_name-create"),
     semesterCodeCreate = document.querySelector("#semester_code-create"),
     semesterNameCreate = document.querySelector("#semester_name-create"),
-    usernameCreate = document.querySelector("#username-create");
+    teacherUsernameCreate = document.querySelector("#teacher_username-create");
+    userUsernameCreate = document.querySelector("#user_username-create");
 
 if (createAcademicButton) {
     createAcademicButton.addEventListener("click", () => {
@@ -96,10 +98,18 @@ if (createSemesterButton) {
     });
 }
 
+if (createTeacherButton) {
+    createTeacherButton.addEventListener("click", () => {
+        setTimeout(function () {
+            teacherUsernameCreate.focus();
+        }, 100);
+    });
+}
+
 if (createUserButton) {
     createUserButton.addEventListener("click", () => {
         setTimeout(function () {
-            usernameCreate.focus();
+            userUsernameCreate.focus();
         }, 100);
     });
 }

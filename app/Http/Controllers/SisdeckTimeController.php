@@ -32,8 +32,7 @@ class SisdeckTimeController extends AppBaseController
     {
         $sisdeckTimes = $this->sisdeckTimeRepository->all();
 
-        return view('/sisdeck/times/index')
-            ->with('sisdeckTimes', $sisdeckTimes);
+        return view('/times/index')->with('sisdeckTimes', $sisdeckTimes);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckTimeController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/times/create');
+        return view('/times/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckTimeController extends AppBaseController
             return redirect(route('sisdeck.times.index'));
         }
 
-        return view('/sisdeck/times/show')->with('sisdeckTime', $sisdeckTime);
+        return view('/times/show')->with('sisdeckTime', $sisdeckTime);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckTimeController extends AppBaseController
             return redirect(route('sisdeck.times.index'));
         }
 
-        return view('/sisdeck/times/edit')->with('sisdeckTime', $sisdeckTime);
+        return view('/times/edit')->with('sisdeckTime', $sisdeckTime);
     }
 
     /**

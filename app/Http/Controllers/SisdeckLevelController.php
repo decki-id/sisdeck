@@ -32,8 +32,7 @@ class SisdeckLevelController extends AppBaseController
     {
         $sisdeckLevels = $this->sisdeckLevelRepository->all();
 
-        return view('/sisdeck/levels/index')
-            ->with('sisdeckLevels', $sisdeckLevels);
+        return view('/levels/index')->with('sisdeckLevels', $sisdeckLevels);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckLevelController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/levels/create');
+        return view('/levels/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckLevelController extends AppBaseController
             return redirect(route('sisdeck.levels.index'));
         }
 
-        return view('/sisdeck/levels/show')->with('sisdeckLevel', $sisdeckLevel);
+        return view('/levels/show')->with('sisdeckLevel', $sisdeckLevel);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckLevelController extends AppBaseController
             return redirect(route('sisdeck.levels.index'));
         }
 
-        return view('/sisdeck/levels/edit')->with('sisdeckLevel', $sisdeckLevel);
+        return view('/levels/edit')->with('sisdeckLevel', $sisdeckLevel);
     }
 
     /**

@@ -29,7 +29,7 @@ class SisdeckRegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/sisdeck';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -43,7 +43,7 @@ class SisdeckRegisterController extends Controller
 
     public function showRegistrationForm()
     {
-        return view('/sisdeck/auth/register');
+        return view('/auth/register');
     }
 
     /**

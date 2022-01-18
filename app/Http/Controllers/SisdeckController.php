@@ -13,6 +13,6 @@ class SisdeckController extends Controller
 
     public function index()
     {
-        return view('/sisdeck/index');
+        return view('/index');
     }
 }

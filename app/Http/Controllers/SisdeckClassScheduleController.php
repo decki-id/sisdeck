@@ -50,7 +50,7 @@ class SisdeckClassScheduleController extends AppBaseController
         $day = SisdeckDay::pluck('day', 'id');
         $time = SisdeckTime::pluck('time', 'id');
 
-        return view('sisdeck/class_schedules/index', compact('sisdeckClassSchedules', 'course', 'class', 'level', 'shift', 'classroom', 'semester', 'batch', 'day', 'time'));
+        return view('/class_schedules/index', compact('sisdeckClassSchedules', 'course', 'class', 'level', 'shift', 'classroom', 'semester', 'batch', 'day', 'time'));
     }
 
     /**
@@ -60,7 +60,7 @@ class SisdeckClassScheduleController extends AppBaseController
      */
     public function create()
     {
-        return view('sisdeck/class_schedules/create');
+        return view('/class_schedules/create');
     }
 
     /**
@@ -98,7 +98,7 @@ class SisdeckClassScheduleController extends AppBaseController
             return redirect(route('sisdeck.class_schedules.index'));
         }
 
-        return view('sisdeck/class_schedules/show')->with('sisdeckClassSchedule', $sisdeckClassSchedule);
+        return view('/class_schedules/show')->with('sisdeckClassSchedule', $sisdeckClassSchedule);
     }
 
     /**
@@ -118,7 +118,7 @@ class SisdeckClassScheduleController extends AppBaseController
             return redirect(route('sisdeck.class_schedules.index'));
         }
 
-        return view('sisdeck/class_schedules/edit')->with('sisdeckClassSchedule', $sisdeckClassSchedule);
+        return view('/class_schedules/edit')->with('sisdeckClassSchedule', $sisdeckClassSchedule);
     }
 
     /**

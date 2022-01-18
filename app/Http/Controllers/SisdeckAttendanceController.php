@@ -32,8 +32,7 @@ class SisdeckAttendanceController extends AppBaseController
     {
         $sisdeckAttendances = $this->sisdeckAttendanceRepository->all();
 
-        return view('/sisdeck/attendances/index')
-            ->with('sisdeckAttendances', $sisdeckAttendances);
+        return view('/attendances/index')->with('sisdeckAttendances', $sisdeckAttendances);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckAttendanceController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/attendances/create');
+        return view('/attendances/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckAttendanceController extends AppBaseController
             return redirect(route('sisdeck.attendances.index'));
         }
 
-        return view('/sisdeck/attendances/show')->with('sisdeckAttendance', $sisdeckAttendance);
+        return view('/attendances/show')->with('sisdeckAttendance', $sisdeckAttendance);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckAttendanceController extends AppBaseController
             return redirect(route('sisdeck.attendances.index'));
         }
 
-        return view('/sisdeck/attendances/edit')->with('sisdeckAttendance', $sisdeckAttendance);
+        return view('/attendances/edit')->with('sisdeckAttendance', $sisdeckAttendance);
     }
 
     /**

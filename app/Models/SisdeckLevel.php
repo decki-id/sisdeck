@@ -26,10 +26,7 @@ class SisdeckLevel extends Model
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
-
     protected $dates = ['deleted_at'];
-
-
 
     public $fillable = [
         'course_id',
@@ -62,6 +59,4 @@ class SisdeckLevel extends Model
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];
-
-    
 }

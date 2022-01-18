@@ -32,8 +32,7 @@ class SisdeckShiftController extends AppBaseController
     {
         $sisdeckShifts = $this->sisdeckShiftRepository->all();
 
-        return view('/sisdeck/shifts/index')
-            ->with('sisdeckShifts', $sisdeckShifts);
+        return view('/shifts/index')->with('sisdeckShifts', $sisdeckShifts);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckShiftController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/shifts/create');
+        return view('/shifts/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckShiftController extends AppBaseController
             return redirect(route('sisdeck.shifts.index'));
         }
 
-        return view('/sisdeck/shifts/show')->with('sisdeckShift', $sisdeckShift);
+        return view('/shifts/show')->with('sisdeckShift', $sisdeckShift);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckShiftController extends AppBaseController
             return redirect(route('sisdeck.shifts.index'));
         }
 
-        return view('/sisdeck/shifts/edit')->with('sisdeckShift', $sisdeckShift);
+        return view('/shifts/edit')->with('sisdeckShift', $sisdeckShift);
     }
 
     /**

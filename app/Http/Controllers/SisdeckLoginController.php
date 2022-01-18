@@ -26,7 +26,7 @@ class SisdeckLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/sisdeck';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -40,12 +40,12 @@ class SisdeckLoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('/sisdeck/auth/login');
+        return view('/auth/login');
     }
 
     public function logout()
     {
         Auth::logout();
-        return redirect('/sisdeck');
+        return redirect('/');
     }
 }

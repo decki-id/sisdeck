@@ -10,31 +10,31 @@
             @csrf
             @method('PATCH')
             <div class="modal-body">
-                {!! Form::hidden('id', null, ['id' => 'id']) !!}
+                {!! Form::hidden('id', null, ['id' => 'user_id']) !!}
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('username', 'Username', ['class' => 'form-label']) !!}
-                        {!! Form::text('username', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'username-update', 'title' => 'Username', 'placeholder' => 'Insert username']) !!}
+                        {!! Form::text('username', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_username-update', 'title' => 'Username', 'placeholder' => 'Insert username']) !!}
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('fullname', 'Fullname', ['class' => 'form-label']) !!}
-                        {!! Form::text('fullname', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'fullname-update', 'title' => 'Fullname', 'placeholder' => 'Insert fullname']) !!}
+                        {!! Form::text('fullname', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_fullname-update', 'title' => 'Fullname', 'placeholder' => 'Insert fullname']) !!}
                     </div>
                 </div>
                 @if(!empty($role))
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('role_id', 'Role', ['class' => 'form-label']) !!}
-                        {!! Form::select('role_id', $role, 'null', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'role-update', 'title' => 'User Role', 'placeholder' => 'Choose role']) !!}
+                        {!! Form::select('role_id', $role, 'null', ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_role-update', 'title' => 'User Role', 'placeholder' => 'Choose role']) !!}
                     </div>
                 </div>
                 @endif
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
                         {!! Form::label('email', 'Email', ['class' => 'form-label']) !!}
-                        {!! Form::email('email', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'email-update', 'title' => 'Email', 'placeholder' => 'Insert email']) !!}
+                        {!! Form::email('email', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'user_email-update', 'title' => 'Email', 'placeholder' => 'Insert email']) !!}
                     </div>
                 </div>
             </div>

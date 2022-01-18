@@ -65,14 +65,14 @@
                 email = button.data('email'),
                 modal = $(this);
 
-            modal.find('.modal-body #id').val(user_id);
-            modal.find('.modal-body #username-update').val(username);
-            modal.find('.modal-body #fullname-update').val(fullname);
-            modal.find('.modal-body #role-update').val(role_id).attr('selected', 'selected');
-            modal.find('.modal-body #email-update').val(email);
+            modal.find('.modal-body #user_id').val(user_id);
+            modal.find('.modal-body #user_username-update').val(username);
+            modal.find('.modal-body #user_fullname-update').val(fullname);
+            modal.find('.modal-body #user_role-update').val(role_id).attr('selected', 'selected');
+            modal.find('.modal-body #user_email-update').val(email);
 
             setTimeout(function () {
-                modal.find('.modal-body #username-update').focus();
+                modal.find('.modal-body #user_username-update').focus();
             }, 100);
         });
     </script>

@@ -52,7 +52,5 @@ class SisdeckBatch extends Model
         'deleted_at' => 'nullable',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
-    ];
-
-    
+    ];   
 }

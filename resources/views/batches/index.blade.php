@@ -1,4 +1,4 @@
-@extends('/sisdeck/layouts/app')
+@extends('/layouts/app')
 
 @section('title', 'SisDeck | Batches')
 
@@ -16,7 +16,7 @@
         @include('flash::message')
         @include('adminlte-templates::common.errors')
         <div class="clearfix"></div>
-        <div class="box box-primary"><div class="box-body">@include('/sisdeck/batches/table')</div></div>
+        <div class="box box-primary"><div class="box-body">@include('/batches/table')</div></div>
         <div class="text-center"></div>
     </div>
 @endsection

@@ -77,11 +77,11 @@
                                         <a href="#" class="btn btn-default btn-flat w-100">Profile</a>
                                     </div>
                                     <div>
-                                        <a href="{{ url('/sisdeck-logout') }}" class="btn btn-default btn-flat w-100"
+                                        <a href="{{ url('/logout') }}" class="btn btn-default btn-flat w-100"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             Sign out
                                         </a>
-                                        <form id="logout-form" action="{{ url('/sisdeck-logout') }}" method="POST">
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST">
                                             @csrf
                                         </form>
                                     </div>
@@ -94,7 +94,7 @@
         </header>
 
         <!-- Left side column. contains the logo and sidebar -->
-        @include('/sisdeck/layouts/sidebar')
+        @include('/layouts/sidebar')
         <!-- Content Wrapper. Contains page content -->
 
         <div class="content-wrapper">
@@ -102,40 +102,40 @@
         </div>
     </div>
 
-    @include('/sisdeck/academics/create')
-    @include('/sisdeck/academics/update')
+    @include('/academics/create')
+    @include('/academics/update')
 
-    @include('/sisdeck/batches/create')
-    @include('/sisdeck/batches/update')
+    @include('/batches/create')
+    @include('/batches/update')
 
-    @include('/sisdeck/class_schedules/create')
-    @include('/sisdeck/class_schedules/read')
-    @include('/sisdeck/class_schedules/update')
+    @include('/class_schedules/create')
+    @include('/class_schedules/read')
+    @include('/class_schedules/update')
 
-    @include('/sisdeck/classes/create')
-    @include('/sisdeck/classes/update')
+    @include('/classes/create')
+    @include('/classes/update')
 
-    @include('/sisdeck/classrooms/create')
-    @include('/sisdeck/classrooms/update')
+    @include('/classrooms/create')
+    @include('/classrooms/update')
 
-    @include('/sisdeck/courses/create')
-    @include('/sisdeck/courses/update')
+    @include('/courses/create')
+    @include('/courses/update')
 
-    @include('/sisdeck/days/create')
-    @include('/sisdeck/days/update')
+    @include('/days/create')
+    @include('/days/update')
 
-    @include('/sisdeck/roles/create')
-    @include('/sisdeck/roles/update')
+    @include('/roles/create')
+    @include('/roles/update')
 
-    @include('/sisdeck/semesters/create')
-    @include('/sisdeck/semesters/update')
+    @include('/semesters/create')
+    @include('/semesters/update')
 
-    @include('/sisdeck/teachers/create')
-    @include('/sisdeck/teachers/update')
+    @include('/teachers/create')
+    @include('/teachers/update')
 
-    @include('/sisdeck/users/create')
-    @include('/sisdeck/users/read')
-    @include('/sisdeck/users/update')
+    @include('/users/create')
+    @include('/users/read')
+    @include('/users/update')
 
     {{-- <!-- @else
     <nav class="navbar navbar-default navbar-static-top">
@@ -159,14 +159,14 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 Left Side Of Navbar
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/sisdeck') }}">Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                 </ul>
 
                 Right Side Of Navbar
                 <ul class="nav navbar-nav navbar-right">
                     Authentication Links
-                    <li><a href="{{ url('/sisdeck/login') }}">Login</a></li>
-                    <li><a href="{{ url('/sisdeck/register') }}">Register</a></li>
+                    <li><a href="{{ url('/login') }}">Login</a></li>
+                    <li><a href="{{ url('/register') }}">Register</a></li>
                 </ul>
             </div>
         </div>

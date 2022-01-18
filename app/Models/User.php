@@ -59,19 +59,4 @@ class User extends Authenticatable implements JWTSubject
             ]);
         });
     }
-
-    public function posts()
-    {
-        return $this->hasMany(InstadeckPost::class)->orderBy('created_at', 'DESC');
-    }
-
-    public function following()
-    {
-        return $this->belongsToMany(InstadeckProfile::class);
-    }
-
-    public function profile()
-    {
-        return $this->hasOne(InstadeckProfile::class);
-    }
 }

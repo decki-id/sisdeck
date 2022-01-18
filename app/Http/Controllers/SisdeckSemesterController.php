@@ -32,7 +32,7 @@ class SisdeckSemesterController extends AppBaseController
     {
         $sisdeckSemesters = $this->sisdeckSemesterRepository->all();
 
-        return view('/sisdeck/semesters/index')->with('sisdeckSemesters', $sisdeckSemesters);
+        return view('/semesters/index')->with('sisdeckSemesters', $sisdeckSemesters);
     }
 
     /**
@@ -42,7 +42,7 @@ class SisdeckSemesterController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/semesters/create');
+        return view('/semesters/create');
     }
 
     /**
@@ -82,7 +82,7 @@ class SisdeckSemesterController extends AppBaseController
             return redirect(route('sisdeck.semesters.index'));
         }
 
-        return view('/sisdeck/semesters/show')->with('sisdeckSemester', $sisdeckSemester);
+        return view('/semesters/show')->with('sisdeckSemester', $sisdeckSemester);
     }
 
     /**
@@ -102,7 +102,7 @@ class SisdeckSemesterController extends AppBaseController
             return redirect(route('sisdeck.semesters.index'));
         }
 
-        return view('/sisdeck/semesters/edit')->with('sisdeckSemester', $sisdeckSemester);
+        return view('/semesters/edit')->with('sisdeckSemester', $sisdeckSemester);
     }
 
     /**

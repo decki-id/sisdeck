@@ -33,12 +33,12 @@
 <body class="hold-transition register-page">
     <div class="register-box">
         <div class="register-logo">
-            <a href="{{ url('/sisdeck') }}">SisDeck<br>Students Information System</a>
+            <a href="{{ url('/') }}">SisDeck<br>Students Information System</a>
         </div>
 
         <div class="register-box-body">
             <p class="login-box-msg">Register a new membership</p>
-            <form method="post" action="{{ url('/sisdeck-register') }}">
+            <form method="post" action="{{ url('/register') }}">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-sm-6">
@@ -124,7 +124,7 @@
             </form>
             <hr>
             <div class="text-center">
-                <a href="{{ url('/sisdeck/login') }}">I already have a membership</a>
+                <a href="{{ url('//login') }}">I already have a membership</a>
             </div>
         </div>
         <!-- /.form-box -->

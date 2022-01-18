@@ -28,5 +28,5 @@
         </div>
     </form>
 
-    <ul class="sidebar-menu" data-widget="tree">@include('/sisdeck/layouts/menu')</ul>
+    <ul class="sidebar-menu" data-widget="tree">@include('/layouts/menu')</ul>
 </div>

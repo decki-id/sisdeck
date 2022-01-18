@@ -32,7 +32,7 @@ class SisdeckRoleController extends AppBaseController
     {
         $sisdeckRoles = $this->sisdeckRoleRepository->all();
 
-        return view('/sisdeck/roles/index')->with('sisdeckRoles', $sisdeckRoles);
+        return view('/roles/index')->with('sisdeckRoles', $sisdeckRoles);
     }
 
     /**
@@ -42,7 +42,7 @@ class SisdeckRoleController extends AppBaseController
      */
     public function create()
     {
-        return view('/sisdeck/roles/create');
+        return view('/roles/create');
     }
 
     /**
@@ -81,7 +81,7 @@ class SisdeckRoleController extends AppBaseController
             return redirect(route('sisdeck.roles.index'));
         }
 
-        return view('/sisdeck/roles/read')->with('sisdeckRole', $sisdeckRole);
+        return view('/roles/read')->with('sisdeckRole', $sisdeckRole);
     }
 
     /**
@@ -101,7 +101,7 @@ class SisdeckRoleController extends AppBaseController
             return redirect(route('sisdeck.roles.index'));
         }
 
-        return view('/sisdeck/roles/update')->with('sisdeckRole', $sisdeckRole);
+        return view('/roles/update')->with('sisdeckRole', $sisdeckRole);
     }
 
     /**

@@ -32,8 +32,7 @@ class SisdeckTransactionController extends AppBaseController
     {
         $sisdeckTransactions = $this->sisdeckTransactionRepository->all();
 
-        return view('sisdeck/transactions/index')
-            ->with('sisdeckTransactions', $sisdeckTransactions);
+        return view('/transactions/index')->with('sisdeckTransactions', $sisdeckTransactions);
     }
 
     /**
@@ -43,7 +42,7 @@ class SisdeckTransactionController extends AppBaseController
      */
     public function create()
     {
-        return view('sisdeck/transactions/create');
+        return view('/transactions/create');
     }
 
     /**
@@ -81,7 +80,7 @@ class SisdeckTransactionController extends AppBaseController
             return redirect(route('sisdeck.transactions.index'));
         }
 
-        return view('sisdeck/transactions/show')->with('sisdeckTransaction', $sisdeckTransaction);
+        return view('/transactions/show')->with('sisdeckTransaction', $sisdeckTransaction);
     }
 
     /**
@@ -101,7 +100,7 @@ class SisdeckTransactionController extends AppBaseController
             return redirect(route('sisdeck.transactions.index'));
         }
 
-        return view('sisdeck/transactions/edit')->with('sisdeckTransaction', $sisdeckTransaction);
+        return view('/transactions/edit')->with('sisdeckTransaction', $sisdeckTransaction);
     }
 
     /**
