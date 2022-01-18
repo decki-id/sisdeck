@@ -124,7 +124,7 @@
             </form>
             <hr>
             <div class="text-center">
-                <a href="{{ url('//login') }}">I already have a membership</a>
+                <a href="{{ url('/login') }}">I already have a membership</a>
             </div>
         </div>
         <!-- /.form-box -->
