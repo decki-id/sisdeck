@@ -11,11 +11,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Deckiherdiawans Portfolio
+## About SisDeck
 
-A repository of personal website that contains web applications built with the Laravel framework.
-<br>By far, there are three web applications.
-
-- [Students](https://deckidecki.com/students), a basic CRUD (Create Read Update Delete) system.
-- [InstaDeck](https://deckidecki.com/instadeck), an Instagram clone website with CRUD feature and Instagram API that shows a page of creator's Instagram account.
-- [SisDeck](https://deckidecki.com/sisdeck), a Student Information System website (still in development).
+SisDeck (Students Information System Deck) is a web-based information system which helps the school to manage their data. SisDeck built with the Laravel framework, InfyOm Laravel Generator tool, and AdminLTE template.<br>
+Thank you for visiting this project.<br>
+See more project portfolio created by Decki Herdiawan Soepandi [here](https://deckidecki.com/portfolios).
