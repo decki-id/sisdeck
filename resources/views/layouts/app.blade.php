@@ -7,7 +7,7 @@
 
     <title>@yield('title')</title>
 
-    <link rel="icon" type="image/jpg" href="{{ url('assets/images/DeckiRevota.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ url('assets/images/student.png') }}">
 
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" href="{{ url('assets/bootstrap-441/css/bootstrap.css') }}">

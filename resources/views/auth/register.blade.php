@@ -2,25 +2,29 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>SisDeck | Registration Page</title>
 
-    <link rel="icon" type="image/png" href="{{ url('assets/images/decki-revota.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ url('assets/images/student.png') }}">
 
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" href="{{ url('assets/bootstrap-441/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url('css/bootstrap-toggle.css') }}">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ url('assets/fontawesome-513/css/all.css') }}">
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ url('css/ionicons.css') }}">
+    <link rel="stylesheet" href="{{ url('css/bootstrap-datetimepicker.css') }}">
 
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ url('css/adminlte.css') }}">
     <link rel="stylesheet" href="{{ url('css/all-skins.css') }}">
 
+    <link rel="stylesheet" href="{{ url('css/select2.css') }}">
     <link rel="stylesheet" href="{{ url('css/sisdeck.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
