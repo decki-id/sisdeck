@@ -88,7 +88,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="form-group col-sm-12">
-                        {!! Form::label('end_date', 'Start Date', ['class' => 'form-label']) !!}
+                        {!! Form::label('end_date', 'End Date', ['class' => 'form-label']) !!}
                         {!! Form::date('end_date', null, ['class' => 'form-control', 'maxlength' => 191, 'id' => 'schedule_end_date-create', 'placeholder' => 'Insert schedule end date']) !!}
                     </div>
                 </div>
