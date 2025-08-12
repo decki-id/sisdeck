@@ -15,4 +15,4 @@
 
 SisDeck (Students Information System Deck) is a web-based information system which helps the school to manage their data. SisDeck built with the Laravel framework, InfyOm Laravel Generator tool, and AdminLTE template.<br>
 Thank you for visiting this project.<br>
-See more project portfolio created by Decki Herdiawan Soepandi [here](https://deckidecki.com/portfolios).
+See more project portfolio created by Decki Herdiawan Soepandi [here](https://decki.id).
