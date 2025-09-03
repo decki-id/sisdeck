@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\InstadeckNewUserWelcomeMail;
+use App\Mail\SisdeckNewUserWelcomeMail;
 use App\Providers\RouteServiceProvider;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -72,7 +72,7 @@ class SisdeckRegisterController extends Controller
      */
     protected function create(array $data)
     {
-        Mail::to($data['email'])->send(new InstadeckNewUserWelcomeMail());
+        Mail::to($data['email'])->send(new SisdeckNewUserWelcomeMail());
         return User::create([
             'username' => $data['username'],
             'fullname' => $data['fullname'],
