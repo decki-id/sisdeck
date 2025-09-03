@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SisdeckProfile extends Model
+class InstadeckProfile extends Model
 {
     protected $guarded = [];
     
