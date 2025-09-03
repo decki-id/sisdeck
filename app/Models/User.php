@@ -59,4 +59,9 @@ class User extends Authenticatable implements JWTSubject
             ]);
         });
     }
+
+    public function profile()
+    {
+        return $this->hasOne(SisdeckProfile::class);
+    }
 }
